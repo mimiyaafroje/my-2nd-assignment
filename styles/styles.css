@@ -45,15 +45,22 @@ max-width: 100%;
 }
 .nav-links{
     display: flex;
-    border: solid rgb(75, 74, 74) 1px;
-    border-radius: 12px;
+    border: 0.5px solid rgb(75, 74, 74) 1px;
+    border-radius: 18px;
     align-items: center;
     height: 30px;
 }
 .nav-links li:first-child{
-    background-color: rgb(243, 122, 36);
- transform: scale(1.2);
+    /* background-color: rgb(243, 122, 36);
+ transform: scale(1.2); */
     
+}
+.home-btn{
+    background-color: rgb(231, 110, 24);
+    border-radius: 18px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
 }
 .nav-item{
     list-style: none;
@@ -69,6 +76,8 @@ max-width: 100%;
    height: 700px;
    align-items: center;
    justify-content: center;
+   
+   padding: 30px;
 }
 .banner{
     align-items: center;
@@ -119,12 +128,12 @@ max-width: 100%;
     height: 80px;
     width: 150px;
     flex-direction: row;
-    opacity:0.1px ;
+    opacity:0.2px ;
     background-color: rgb(102, 101, 101);
     border-radius: 12px;
     position: absolute;
-    left: 72%;
-    bottom: 6%;
+    left: 70%;
+    bottom: 10%;
    
 }
 .banner-image-card-2{
@@ -136,9 +145,9 @@ max-width: 100%;
    
     color: black;
     border-radius: 12px;
-    position: relative;
-    right: 60px;
-    top: -50px;
+    position: absolute;
+    right: 10px;
+    top: 330px;
     
 
     
@@ -149,8 +158,11 @@ max-width: 100%;
     border-radius: 50%;
 }
 .image-container-1{
+    
     /* position: relative; */
+
 }
+/* position: relative; */
 
 
 .gym-banner{
@@ -167,14 +179,19 @@ max-width: 100%;
 .gym-titles{
     color: rgb(107, 104, 104);
 }
+
+
 .gym-types{
     
-
     justify-content:center;
     display: flex;
     align-items: center;
-   
-   
+}
+.exercise-jpg{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 .gym-types img{
     border-radius: 50%;
@@ -186,26 +203,51 @@ max-width: 100%;
    
 }
 .explain-fitness{
-    color: rgb(107, 104, 104);
+    color: rgb(106, 104, 104);
     justify-content: center;
     align-items: center;
     width: 200px;
 
-    
-
-
+}
+.links-tube{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1a1a;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.links-tube h3{
+    font-size: 30px;
+    color:#fbfaf8;
+    font-style: italic;
 
 }
+.link-btn{
+    height: 40px;
+    width: 150px;
+    padding: 5px;
+    margin: 5px;
+    color: #ffffff;
+    background-color: black;
+    font-size: 20px;
+}
+
+
+
 .run-container{
     display: flex;
     justify-content:center ;
     align-items: center;
+    flex-direction: row;
     background-color: rgb(28, 28, 28);
     height: 300px;
     width: 70%;
     padding:10px;
     margin-top:20px ;
-    margin-left:200px;
+    margin-left: 260px;
+   
     border-radius: 12px;
     
 
@@ -216,24 +258,27 @@ max-width: 100%;
     color: #ffffff;
 }
 .run-title-explain{
-    width: 40%;
+   
     color: rgb(107, 104, 104);
     
 }
 .run-fist-banner{
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
 }
 .run-btn{
     font-size: 20px;
     padding: 5px;
-    margin: 10px;
+    
     border-radius: 30px;
     background-color: rgb(211, 95, 12);
     color: #ffffff;
     height: 50px;
     width: 200px;
-    justify-content: center;
-    align-items: center;
+   
 }
 .run-img-container{
     padding: 10px;
@@ -368,10 +413,11 @@ padding: 10px;
     align-items: center;
     background-color: rgb(29, 28, 28);
     height: 350px;
-    width: 590px;
+    width: 570px;
     border-radius: 12px;
     padding: 10px;
     margin-left: 420px;
+    margin-right: 420px;
     
 }
 .trainer-jpg img{
@@ -400,6 +446,21 @@ padding: 10px;
     align-items: center;
     
     
+}
+.youtube-videos{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #232323;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 450px;
+    padding: 20px;
+}
+.youtube-videos h3{
+    color: #716e6e;
+    font-size: 25;
 }
     
 
@@ -449,11 +510,12 @@ padding: 10px;
     .banners{
         display: flex;
         flex-direction: column;
-        height: 1700px;
+        height:2000px;
         margin: 0%;
         padding: 0%;
         align-items: center;
         justify-content: center;
+        margin-bottom: 20px;
     }
     .banner-img{
         justify-content: center;
@@ -461,7 +523,12 @@ padding: 10px;
         padding: 0%;
         margin: 0%;
     }
-    
+    .banner-image-card{
+        position: relative;
+    }
+    .banner-image-card-2{
+        position: relative;
+    }
     
     .gym-types{
         display: grid;
